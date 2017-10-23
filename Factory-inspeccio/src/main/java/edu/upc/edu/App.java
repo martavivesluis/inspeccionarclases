@@ -34,7 +34,16 @@ public class App {
             System.out.println(method.getClass());
         }
 
+        try {
 
+            Method m = info.getDeclaredMethod("getCommand",String.class);
+
+            System.out.println("---Parametres:"+ m.getParameterTypes());
+
+        }catch(Exception e){
+            System.out.println("------ Error:");
+
+        }
 
 
 
